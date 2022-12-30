@@ -18,3 +18,12 @@
 - `echo ".pytest_cache" >> .gitignore`
 - `echo "__pycache__" >> .gitignore`
 - `poetry run pytest`
+
+## Packaging options
+
+### poetry to build the library
+
+- `poetry build`
+- `echo "dist" >> .gitignore`
+
+Use the `./dist/lib-0.1.0-py3-none-any.whl` file to install the library.
