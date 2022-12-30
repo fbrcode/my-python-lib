@@ -18,3 +18,15 @@
 - `echo ".pytest_cache" >> .gitignore`
 - `echo "__pycache__" >> .gitignore`
 - `poetry run pytest`
+
+## Packaging options
+
+### A Use setup.py to build the library
+
+- `touch setup.py`
+- `echo "dist" >> .gitignore`
+- `echo "build" >> .gitignore`
+- `echo "lib.egg-info" >> .gitignore`
+- `python setup.py bdist_wheel`
+
+Use the `./dist/lib-0.1.0-py3-none-any.whl` file to install the library.
